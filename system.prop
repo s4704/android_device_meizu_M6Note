@@ -72,22 +72,11 @@ telephony.lteOnCdmaDevice=1
 # System prop to turn on hfp client
 bluetooth.hfp.client=1
 
-# SMARTISAN_BEGIN (CCM2005:CDMA SMS sent over TCH)
-# 2017-5-15 liulu:create the feature M0164744
-# 2017-10-11 guochenggang: porting to osborn-common M0191861
-# CDMA sms sent over TCH M0164744
 persist.radio.force_on_dc=true
-# SMARTISAN_END (CCM2005:CDMA SMS sent over TCH)
 
-# SMARTISAN_BEGIN (CCM2008: Set property ignore_dom_time)
-# 2018-04-28 liulu: set ignore_dom_time as 5 sec
 persist.radio.ignore_dom_time=5
-# SMARTISAN_END (CCM2008: Set property ignore_dom_time)
 
-# SMARTISAN_BEGIN (CCM5021:Enable modem save power property)
-# 2017-12-27 liulu:enable the property M0213013
 persist.radio.add_power_save=1
-# SMARTISAN_END (CCM5021:Enable modem save power property)
 
 #Simulate sdcard on /data/media
 #
@@ -211,8 +200,6 @@ camera.display.lmax=1280x720
 #set cutoff voltage to 3400mV
 ro.cutoff_voltage_mv=3400
 
-ro.config.smartisan.low_ram=true
-
 #Headset button input device name
 ro.system.headsetinput=msm8953-snd-card-mtp Button Jack
 
@@ -235,13 +222,7 @@ ro.radio.apn.protocal=IPV4V6
 # Report audio codec
 persist.radio.report_codec=1
 
-#codename
-ro.product.codename=Smartisan U3
-
-# SMARTISAN_BEGIN (CCM5012:RIL CLIR RETURN)
-# 2017-09-13 hubin:added. M0186977
 persist.radio.facnotsup_as_nonw=1
-# SMARTISAN_END (CCM5012:RIL CLIR RETURN)
 
 #Enable IMS
 persist.radio.calls.on.ims=true
