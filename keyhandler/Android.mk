@@ -18,7 +18,7 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
-LOCAL_PACKAGE_NAME := KeyHandlerOscar
+LOCAL_PACKAGE_NAME := KeyHandlerM1721
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_CERTIFICATE := platform

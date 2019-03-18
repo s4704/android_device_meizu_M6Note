@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.mokee.settings.device.oscar;
+package org.mokee.settings.device.m1721;
 
 import android.content.Context;
 import android.hardware.input.InputManager;

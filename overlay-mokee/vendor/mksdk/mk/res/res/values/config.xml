@@ -19,13 +19,13 @@
     <!-- Paths to the libraries that contain device specific key handlers -->
     <string-array name="config_deviceKeyHandlerLibs" translatable="false">
         <item>/system/priv-app/MKParts/MKParts.apk</item>
-        <item>/system/priv-app/KeyHandlerOscar/KeyHandlerOscar.apk</item>
+        <item>/system/priv-app/KeyHandlerM1721/KeyHandlerM1721.apk</item>
     </string-array>
 
     <!-- Names of the key handler classes -->
     <string-array name="config_deviceKeyHandlerClasses" translatable="false">
         <item>org.mokee.mkparts.gestures.KeyHandler</item>
-        <item>org.mokee.settings.device.oscar.KeyHandler</item>
+        <item>org.mokee.settings.device.m1721.KeyHandler</item>
     </string-array>
 
     <!-- Default value for proximity check on screen wake
