@@ -17,8 +17,8 @@
 
 set -e
 
-DEVICE=oscar
-VENDOR=smartisan
+DEVICE=m1721
+VENDOR=meizu
 
 INITIAL_COPYRIGHT_YEAR=2018
 

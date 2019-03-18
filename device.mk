@@ -21,7 +21,7 @@
 # definition file).
 #
 
-$(call inherit-product, vendor/smartisan/oscar/oscar-vendor.mk)
+$(call inherit-product, vendor/meizu/m1721/m1721-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \

@@ -21,7 +21,7 @@
 # definition file).
 #
 
-DEVICE_PATH := device/smartisan/oscar
+DEVICE_PATH := device/meizu/m1721
 
 # SDClang configuration
 TARGET_USE_SDCLANG := true
@@ -31,7 +31,7 @@ TARGET_BOOTLOADER_BOARD_NAME := msm8953
 TARGET_NO_BOOTLOADER := true
 
 # Platform
-BOARD_VENDOR := smartisan
+BOARD_VENDOR := meizu
 TARGET_BOARD_PLATFORM := msm8953
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno506
 
@@ -58,7 +58,7 @@ BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 
-TARGET_PREBUILT_KERNEL := device/smartisan/oscar/prebuilt/Image.gz-dtb
+TARGET_PREBUILT_KERNEL := device/meizu/m1721/prebuilt/Image.gz-dtb
 
 # HAX: SELinux Permissive - Remove ASAP
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
@@ -230,4 +230,4 @@ WIFI_DRIVER_MODULE_PATH := "/system/lib/modules/wlan.ko"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # inherit from the proprietary version
--include vendor/smartisan/oscar/BoardConfigVendor.mk
+-include vendor/meizu/m1721/BoardConfigVendor.mk
