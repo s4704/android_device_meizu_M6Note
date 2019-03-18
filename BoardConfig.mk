@@ -200,7 +200,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/recovery.fstab
 TARGET_RIL_VARIANT := caf
 
 # Releasetools
-TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_oscar
+TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_m1721
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # SELinux

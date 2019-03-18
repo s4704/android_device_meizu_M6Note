@@ -191,6 +191,6 @@ Value * VerifyModemFn(const char *name, State *state, int argc, Expr *argv[]) {
     return StringValue(strdup(ret ? "1" : "0"));
 }
 
-void Register_librecovery_updater_oscar() {
-    RegisterFunction("oscar.verify_modem", VerifyModemFn);
+void Register_librecovery_updater_m1721() {
+    RegisterFunction("m1721.verify_modem", VerifyModemFn);
 }
