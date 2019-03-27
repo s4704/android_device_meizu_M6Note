@@ -202,7 +202,7 @@ PRODUCT_BOOT_JARS += \
 
 # Input
 PRODUCT_PACKAGES += \
-    KeyHandlerm1721
+    KeyHandlerM1721
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/betterlife-blfp.kl:system/usr/keylayout/betterlife-blfp.kl
