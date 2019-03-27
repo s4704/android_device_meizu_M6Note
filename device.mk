@@ -273,13 +273,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     sensors.msm8953
 
-# SOTER (Fingerprint support for WeChat Payment)
-PRODUCT_PACKAGES += \
-    soter
-
-PRODUCT_BOOT_JARS += \
-    soter
-
 # Wifi
 PRODUCT_PACKAGES += \
     ipacm \
