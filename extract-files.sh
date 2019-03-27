@@ -24,9 +24,9 @@ VENDOR=meizu
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
-MK_ROOT="$MY_DIR"/../../..
+CM_ROOT="$MY_DIR"/../../..
 
-HELPER="$MK_ROOT"/vendor/mk/build/tools/extract_utils.sh
+HELPER="$CM_ROOT"/vendor/cm/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
@@ -44,10 +44,11 @@ if [ -z "$SRC" ]; then
 fi
 
 # Initialize the helper
-setup_vendor "$DEVICE" "$VENDOR" "$MK_ROOT" false "$CLEAN_VENDOR"
+setup_vendor "$DEVICE" "$VENDOR" "$CM_ROOT" false "$CLEAN_VENDOR"
 
 extract "$MY_DIR"/proprietary-files.txt "$SRC" "$SECTION"
-extract "$MY_DIR"/proprietary-files-qc.txt "$SRC_QC" "$SECTION"
-extract "$MY_DIR"/proprietary-files-qc-perf.txt "$SRC_QC" "$SECTION"
+extract "$MY_DIR"/proprietary-files-camera.txt "$SRC" "$SECTION"
+extract "$MY_DIR"/proprietary-files-common.txt "$SRC" "$SECTION"
+extract "$MY_DIR"/proprietary-files-common-perf.txt "$SRC" "$SECTION"
 
 "$MY_DIR"/setup-makefiles.sh
