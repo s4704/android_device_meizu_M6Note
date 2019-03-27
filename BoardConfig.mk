@@ -23,6 +23,9 @@
 
 DEVICE_PATH := device/meizu/m1721
 
+# Jack server heap size
+export ANDROID_JACK_VM_ARGS += "-Xmx3072m"
+
 # SDClang configuration
 TARGET_USE_SDCLANG := true
 
