@@ -154,9 +154,6 @@ PRODUCT_PACKAGES += \
     libbthost_if
 
 # Camera
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/camera/camera_config.xml:system/etc/camera/camera_config.xml
-
 PRODUCT_PACKAGES += \
     Snap
 
