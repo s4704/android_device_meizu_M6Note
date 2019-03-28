@@ -281,3 +281,6 @@ voice.conc.fallbackpath=deep-buffer
 voice.playback.conc.disabled=true
 voice.record.conc.disabled=false
 voice.voip.conc.disabled=true
+
+# Display
+ro.sf.lcd_density=420
