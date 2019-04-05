@@ -77,7 +77,7 @@ $(WCNSS_NV_SYMLINK): $(LOCAL_INSTALLED_MODULE)
 	@echo "WCNSS NV link: $@"
 	@mkdir -p $(dir $@)
 	@rm -rf $@
-	$(hide) ln -sf /system/etc/wifi/$(notdir $@) $@
+	$(hide) ln -sf /persist/$(notdir $@) $@
 
 ALL_DEFAULT_INSTALLED_MODULES += $(WCNSS_INI_SYMLINK) $(WCNSS_NV_SYMLINK)
 
