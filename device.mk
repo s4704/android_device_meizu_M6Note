@@ -198,9 +198,6 @@ PRODUCT_BOOT_JARS += \
     ifaa_fw
 
 # Input
-PRODUCT_PACKAGES += \
-    KeyHandlerM1721
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/betterlife-blfp.kl:system/usr/keylayout/betterlife-blfp.kl
 
