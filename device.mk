@@ -94,6 +94,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/bootdevice/by-name/config
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sf.lcd_density=420
+
 # Audio
 PRODUCT_PACKAGES += \
     audiod \
