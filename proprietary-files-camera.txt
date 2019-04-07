@@ -226,7 +226,6 @@ etc/camera/s5k4e8_chromatix.xml
 etc/camera/s5k3p3sm_chromatix.xml
 etc/camera/imx362_chromatix_bear.xml
 etc/camera/imx362_chromatix.xml
-etc/camera/camera_config.xml
 
 # Camera eeproms
 vendor/lib/libmmcamera_gt24c64a_imx362_s5k2l7_eeprom.so
