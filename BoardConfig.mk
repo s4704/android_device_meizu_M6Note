@@ -133,11 +133,11 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
-# MK Hardware
+# CMHW
 BOARD_HARDWARE_CLASS += \
-    hardware/mokee/mkhw \
-    $(DEVICE_PATH)/mkhw
-BOARD_USES_MOKEE_HARDWARE := true
+    hardware/cyanogen/cmhw \
+    $(DEVICE_PATH)/cmhw
+BOARD_USES_CYANOGEN_HARDWARE := true
 
 # CNE and DPM
 BOARD_USES_QCNE := true
