@@ -172,7 +172,7 @@ ro.config.zram=true
 camera.aux.packagelist=org.codeaurora.snapcam
 
 # set cutoff voltage to 3400mV
-ro.cutoff_voltage_mv=3400
+ro.cutoff_voltage_mv=3100
 
 #set device emmc size
 ro.emmc_size=16GB
@@ -189,9 +189,6 @@ camera.lowpower.record.enable=1
 #properties for limiting preview size in camera
 camera.display.umax=1920x1080
 camera.display.lmax=1280x720
-
-#set cutoff voltage to 3400mV
-ro.cutoff_voltage_mv=3400
 
 # Audio
 af.fast_track_multiplier=1
