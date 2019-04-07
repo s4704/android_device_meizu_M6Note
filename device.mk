@@ -76,7 +76,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.first_api_level=25
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2160
+TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
 # Override heap growth limit due to high display density on device
