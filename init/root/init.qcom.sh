@@ -103,14 +103,6 @@ start_copying_prebuilt_qcril_db()
     fi
 }
 
-start_change_hwinfo_permission()
-{
-    chmod 0400 /sys/hwinfo/*
-    chown system:system /sys/hwinfo/*
-}
-
-start_change_hwinfo_permission
-
 baseband=`getprop ro.baseband`
 echo 1 > /proc/sys/net/ipv6/conf/default/accept_ra_defrtr
 
@@ -303,7 +295,7 @@ case "$target" in
                                     setprop qemu.hw.mainkeys 0
                                     ;;
                        "MTP")
-                                    #setprop qemu.hw.mainkeys 0
+                                    setprop qemu.hw.mainkeys 0
                                     ;;
                        "RCM")
                                     setprop qemu.hw.mainkeys 0

@@ -74,6 +74,7 @@ function configure_memory_parameters() {
     if [ "$arch_type" == "aarch64" ] && [ $MemTotal -gt 2097152 ]; then
         echo 10 > /sys/module/process_reclaim/parameters/pressure_min
         echo 1024 > /sys/module/process_reclaim/parameters/per_swap_size
+        echo "18432,23040,27648,32256,55296,80640" > /sys/module/lowmemorykiller/parameters/minfree
         echo 81250 > /sys/module/lowmemorykiller/parameters/vmpressure_file_min
         adjZeroMinFree=18432
     elif [ "$arch_type" == "aarch64" ] && [ $MemTotal -gt 1048576 ]; then
@@ -102,8 +103,7 @@ function configure_memory_parameters() {
     # Zram disk - 512MB size
     zram_enable=`getprop ro.config.zram`
     if [ "$zram_enable" == "true" ]; then
-        echo 3 > /sys/block/zram0/max_comp_streams
-        echo 1536M > /sys/block/zram0/disksize
+        echo 536870912 > /sys/block/zram0/disksize
         mkswap /dev/block/zram0
         swapon /dev/block/zram0 -p 32758
     fi
@@ -1286,19 +1286,15 @@ case "$target" in
                 #governor settings
                 echo 1 > /sys/devices/system/cpu/cpu0/online
                 echo "interactive" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-                echo "19000" > /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay
+                echo "19000 1401600:39000" > /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay
                 echo 85 > /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
                 echo 20000 > /sys/devices/system/cpu/cpufreq/interactive/timer_rate
                 echo 1401600 > /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq
                 echo 0 > /sys/devices/system/cpu/cpufreq/interactive/io_is_busy
-                echo "60 1401600:80" > /sys/devices/system/cpu/cpufreq/interactive/target_loads
-                echo 20000 > /sys/devices/system/cpu/cpufreq/interactive/min_sample_time
+                echo "85 1401600:80" > /sys/devices/system/cpu/cpufreq/interactive/target_loads
+                echo 39000 > /sys/devices/system/cpu/cpufreq/interactive/min_sample_time
                 echo 40000 > /sys/devices/system/cpu/cpufreq/interactive/sampling_down_factor
                 echo 652800 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
-
-                #input boost settings
-                echo 1401600 > /sys/module/cpu_boost/parameters/input_boost_freq
-                echo 40 > /sys/module/cpu_boost/parameters/input_boost_ms
 
                 # re-enable thermal & BCL core_control now
                 echo 1 > /sys/module/msm_thermal/core_control/enabled
