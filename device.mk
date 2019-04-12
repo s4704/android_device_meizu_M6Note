@@ -157,11 +157,14 @@ PRODUCT_PACKAGES += \
     libbthost_if
 
 # Camera
+PRODUCT_BOOT_JARS += \
+    com.meizu.camera
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/camera/camera_config.xml:system/etc/camera/camera_config.xml
 
-PRODUCT_PACKAGES += \
-    Snap
+#PRODUCT_PACKAGES += \
+#    Snap
 
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
@@ -198,10 +201,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/gps.conf:system/etc/gps.conf \
     $(LOCAL_PATH)/gps/etc/izat.conf:system/etc/izat.conf \
     $(LOCAL_PATH)/gps/etc/sap.conf:system/etc/sap.conf
-
-# IFAA (Fingerprint support for Alipay)
-PRODUCT_BOOT_JARS += \
-    ifaa_fw
 
 # Input
 PRODUCT_COPY_FILES += \

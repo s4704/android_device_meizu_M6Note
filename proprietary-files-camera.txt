@@ -1,3 +1,8 @@
+# Camera app
+-framework/com.meizu.camera.jar
+-app/Camera/Camera.apk
+etc/permissions/com.meizu.camera.xml
+
 # Camera
 bin/mm-qcamera-daemon
 lib/hw/camera.msm8953.so
