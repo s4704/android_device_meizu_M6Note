@@ -39,6 +39,11 @@ etc/firmware/rampatch_tlv_2.1.tlv
 etc/firmware/rampatch_tlv_3.0.tlv
 etc/firmware/rampatch_tlv_3.2.tlv
 
+# Display Color Calibration
+etc/permissions/com.qti.snapdragon.sdk.display.xml
+-framework/com.qti.snapdragon.sdk.display.jar
+-vendor/app/colorservice/colorservice.apk
+
 # Display calibration
 -etc/qdcm_calib_data_hx8399c_holitech_1080p_video_mode_dsi_panel.xml
 -etc/qdcm_calib_data_hx8399c_tcl_1080p_video_mode_dsi_panel.xml
