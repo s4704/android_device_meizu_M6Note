@@ -37,4 +37,7 @@
          battery LEDs would set this config to 11. -->
     <integer name="config_deviceLightCapabilities">3</integer>
 
+    <!-- Turn on LiveDisplay auto mode by default -->
+    <integer name="config_defaultLiveDisplayMode">0</integer>
+
 </resources>
