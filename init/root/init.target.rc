@@ -306,3 +306,28 @@ service fingerprintd /system/bin/fingerprintd
 on boot
     write /sys/devices/soc.0/78b8000.i2c/i2c-4/4-0020/input/input0/fw_name PR1702898-s3528t_00260005_00380008.img
     write /sys/devices/soc.0/78b8000.i2c/i2c-4/4-0020/input/input0/update_fw 1
+    # mx-led, add by liuyang3.wt,20170329.
+    chown system system /sys/class/leds/mx-led/brightness
+    chown system system /sys/class/leds/mx-led/blink
+    chmod 0664 /sys/class/leds/mx-led/brightness
+    chmod 0664 /sys/class/leds/mx-led/blink
+    # flash-led, add by xiejianhua.wt,20170405
+    chmod 0666 /sys/class/flashlightdrv/kd_camera_flashlight/flash1
+    chown media system /sys/class/flashlightdrv/kd_camera_flashlight/flash1
+    chmod 0666 /sys/class/flashlightdrv/kd_camera_flashlight/flash2
+    chown media system /sys/class/flashlightdrv/kd_camera_flashlight/flash2
+    chmod 0666 /sys/class/flashlightdrv/kd_camera_flashlight/flash3
+    chown media system /sys/class/flashlightdrv/kd_camera_flashlight/flash3
+    chmod 0666 /sys/class/flashlightdrv/kd_camera_flashlight/flash4
+    chown media system /sys/class/flashlightdrv/kd_camera_flashlight/flash4
+    chmod 0666 /sys/class/flashlightdrv/kd_camera_flashlight/flash5
+    chown media system /sys/class/flashlightdrv/kd_camera_flashlight/flash5
+    # tp-gesture, add by quandeliang.wt,20170407
+    chown system system /sys/devices/mx_tsp/fts_fw_version
+    chown system system /sys/devices/mx_tsp/fts_fw_update
+    chown system system /proc/gt9xx_config
+    chmod 0664 /sys/devices/mx_tsp/fts_fw_version
+    chmod 0664 /sys/devices/mx_tsp/fts_fw_update
+    chmod 0664 /proc/gt9xx_config
+    chown system system /sys/class/meizu/tp/gesture_control
+    chown system system /sys/class/meizu/tp/gesture_data
