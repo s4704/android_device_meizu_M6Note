@@ -145,6 +145,10 @@ etc/firmware/a530_pm4.fw
 etc/firmware/hbtp/hbtpcfg.dat
 etc/firmware/hbtp/qtc800s_dsp.bin
 
+# Lights
+lib/hw/lights.msm8953.so
+lib64/hw/lights.msm8953.so
+
 # Sensors
 bin/sensors.qcom
 etc/sensors/hals.conf
