@@ -187,7 +187,8 @@ PRODUCT_COPY_FILES += \
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gf-keys.kl:system/usr/keylayout/gf-keys.kl \
-    $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
+    $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
+    $(LOCAL_PATH)/keylayout/main_touch.kl:system/usr/keylayout/main_touch.kl
 
 # IPv6
 PRODUCT_PACKAGES += \
