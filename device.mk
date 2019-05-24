@@ -186,7 +186,8 @@ PRODUCT_COPY_FILES += \
 
 # Keyhandler
 PRODUCT_PACKAGES += \
-    CMActions
+    CMActions \
+    com.cyanogenmod.keyhandler
 
 # Input
 PRODUCT_COPY_FILES += \
