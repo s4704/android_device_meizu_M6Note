@@ -29,27 +29,27 @@ import com.cyanogenmod.settings.device.utils.FileUtils;
 public class GestureController {
     private static final String TAG = GestureController.class.getSimpleName();
 
-    public static final String TOUCHSCREEN_GESTURE_CONTROL_NODE = "/sys/devices/platform/mx-gs/gesture_control";
+    public static final String TOUCHSCREEN_GESTURE_CONTROL_NODE = "/sys/class/meizu/tp/gesture_control";
     public static final String TOUCHSCREEN_GESTURE_CONTROL_KEY = "touchscreen_gesture_control";
 
     // M2Note gesture keys
-    public static final int DOUBLE_TAP = 0xA0; //160
-    public static final int SWIPE_X_LEFT = 0xB0; //176
-    public static final int SWIPE_X_RIGHT = 0xB1;
-    public static final int SWIPE_Y_UP = 0xB2;
-    public static final int SWIPE_Y_DOWN = 0xB3;
+    public static final int DOUBLE_TAP = 0x270; //624
+    public static final int SWIPE_X_LEFT = 0x280; //640
+    public static final int SWIPE_X_RIGHT = 0x281;
+    public static final int SWIPE_Y_UP = 0x282;
+    public static final int SWIPE_Y_DOWN = 0x283;
 
-    public static final int UNICODE_E = 0xC0; // 192
-    public static final int UNICODE_C = 0xC1;
-    public static final int UNICODE_W = 0xC2;
-    public static final int UNICODE_M = 0xC3;
-    public static final int UNICODE_O = 0xC4;
-    public static final int UNICODE_S = 0xC5;
-    public static final int UNICODE_V_UP = 0xC6;
-    public static final int UNICODE_V_DOWN = 0xC7;
-    public static final int UNICODE_V_L = 0xC8;
-    public static final int UNICODE_V_R = 0xC9;
-    public static final int UNICODE_Z = 0xCA;
+    public static final int UNICODE_E = 0x290; // 656
+    public static final int UNICODE_C = 0x291;
+    public static final int UNICODE_W = 0x292;
+    public static final int UNICODE_M = 0x293;
+    public static final int UNICODE_O = 0x294;
+    public static final int UNICODE_S = 0x295;
+    public static final int UNICODE_V_UP = 0x296;
+    public static final int UNICODE_V_DOWN = 0x297;
+    public static final int UNICODE_V_L = 0x298;
+    public static final int UNICODE_V_R = 0x299;
+    public static final int UNICODE_Z = 0x29A;
 
 
     public static final int GESTURES_DISABLED_MASK = 0x100;
