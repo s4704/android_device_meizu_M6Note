@@ -184,6 +184,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/izat.conf:system/etc/izat.conf \
     $(LOCAL_PATH)/gps/etc/sap.conf:system/etc/sap.conf
 
+# Keyhandler
+PRODUCT_PACKAGES += \
+    CMActions
+
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gf-keys.kl:system/usr/keylayout/gf-keys.kl \
