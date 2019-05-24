@@ -71,7 +71,7 @@ public class KeyHandler implements DeviceKeyHandler {
     private static final int GESTURE_REQUEST = 1;
 
     private static final String MEIZU_GESTURE_DATA =
-            "/sys/devices/platform/mx-gs/gesture_data";
+            "/sys/class/meizu/tp/gesture_data";
 
     private static final String KEY_GESTURE_HAPTIC_FEEDBACK =
             "touchscreen_gesture_haptic_feedback";
@@ -83,23 +83,23 @@ public class KeyHandler implements DeviceKeyHandler {
             "com.android.keyguard.action.DISMISS_KEYGUARD_SECURELY";
 
     // M2Note gesture codes
-    public static final int DOUBLE_TAP = 0xA0; //160
-    public static final int SWIPE_X_LEFT = 0xB0; //176
-    public static final int SWIPE_X_RIGHT = 0xB1;
-    public static final int SWIPE_Y_UP = 0xB2;
-    public static final int SWIPE_Y_DOWN = 0xB3;
+    public static final int DOUBLE_TAP = 0x270; //624
+    public static final int SWIPE_X_LEFT = 0x280; //640
+    public static final int SWIPE_X_RIGHT = 0x281;
+    public static final int SWIPE_Y_UP = 0x282;
+    public static final int SWIPE_Y_DOWN = 0x283;
 
-    public static final int UNICODE_E = 0xC0; // 192
-    public static final int UNICODE_C = 0xC1;
-    public static final int UNICODE_W = 0xC2;
-    public static final int UNICODE_M = 0xC3;
-    public static final int UNICODE_O = 0xC4;
-    public static final int UNICODE_S = 0xC5;
-    public static final int UNICODE_V_UP = 0xC6;
-    public static final int UNICODE_V_DOWN = 0xC7;
-    public static final int UNICODE_V_L = 0xC8;
-    public static final int UNICODE_V_R = 0xC9;
-    public static final int UNICODE_Z = 0xCA;
+    public static final int UNICODE_E = 0x290; // 656
+    public static final int UNICODE_C = 0x291;
+    public static final int UNICODE_W = 0x292;
+    public static final int UNICODE_M = 0x293;
+    public static final int UNICODE_O = 0x294;
+    public static final int UNICODE_S = 0x295;
+    public static final int UNICODE_V_UP = 0x296;
+    public static final int UNICODE_V_DOWN = 0x297;
+    public static final int UNICODE_V_L = 0x298;
+    public static final int UNICODE_V_R = 0x299;
+    public static final int UNICODE_Z = 0x29A;
 
     private static final int GESTURE_WAKELOCK_DURATION = 3000;
 
