@@ -21,7 +21,7 @@
 # definition file).
 #
 
-DEVICE_PATH := device/meizu/m1721
+DEVICE_PATH := device/meizu/M6Note
 
 # Jack server heap size
 export ANDROID_JACK_VM_ARGS += "-Xmx3072m"
@@ -61,7 +61,7 @@ BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 
-TARGET_PREBUILT_KERNEL := device/meizu/m1721/prebuilt/Image.gz-dtb
+TARGET_PREBUILT_KERNEL := device/meizu/M6Note/prebuilt/Image.gz-dtb
 
 # HAX: SELinux Permissive - Remove ASAP
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
@@ -169,8 +169,8 @@ BOARD_VENDOR_QCOM_LOC_PDK_FEATURE_SET := true
 
 # Init
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
-TARGET_INIT_VENDOR_LIB := libinit_m1721
-TARGET_RECOVERY_DEVICE_MODULES := libinit_m1721
+TARGET_INIT_VENDOR_LIB := libinit_M6Note
+TARGET_RECOVERY_DEVICE_MODULES := libinit_M6Note
 
 # Keystore
 TARGET_PROVIDES_KEYMASTER := true
@@ -231,4 +231,4 @@ WIFI_DRIVER_MODULE_PATH := "/system/lib/modules/wlan.ko"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # inherit from the proprietary version
--include vendor/meizu/m1721/BoardConfigVendor.mk
+-include vendor/meizu/M6Note/BoardConfigVendor.mk

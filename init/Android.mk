@@ -19,8 +19,8 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_C_INCLUDES := system/core/init
-LOCAL_MODULE := libinit_m1721
+LOCAL_MODULE := libinit_M6Note
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := init_m1721.cpp
+LOCAL_SRC_FILES := init_M6Note.cpp
 
 include $(BUILD_STATIC_LIBRARY)

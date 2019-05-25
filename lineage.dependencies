@@ -1,7 +1,7 @@
 [
   {
-   "repository": "android_vendor_meizu_m1721",
-   "target_path": "vendor/meizu/m1721"
+   "repository": "android_vendor_meizu_M6Note",
+   "target_path": "vendor/meizu/M6Note"
   },
   {
     "repository": "android_device_qcom_common",

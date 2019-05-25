@@ -17,7 +17,7 @@
 
 set -e
 
-DEVICE=m1721
+DEVICE=M6Note
 VENDOR=meizu
 
 # Load extract_utils and do some sanity checks

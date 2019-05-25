@@ -25,7 +25,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),m1721)
+ifeq ($(TARGET_DEVICE),M6Note)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
 include $(CLEAR_VARS)
