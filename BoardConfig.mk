@@ -69,6 +69,9 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := m6note,m6n,m1721,M1721,M6Note
+
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-uart"
 
